@@ -1,0 +1,43 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  name: MyString
+  roomNo: 
+  when: MyString
+  nMediaType: MyString
+  nFeedback: MyString
+  pMediaType: MyString
+  pFeedback: MyString
+  buildingDamage: 1
+  road: 1
+  fire: 1
+  water: false
+  chem: false
+  elec: false
+  gas: false
+  immediate: 1
+  dead: 1
+  minor: 1
+  dalayed: 1
+  trapped: 1
+
+two:
+  name: MyString
+  roomNo: 
+  when: MyString
+  nMediaType: MyString
+  nFeedback: MyString
+  pMediaType: MyString
+  pFeedback: MyString
+  buildingDamage: 1
+  road: 1
+  fire: 1
+  water: false
+  chem: false
+  elec: false
+  gas: false
+  immediate: 1
+  dead: 1
+  minor: 1
+  dalayed: 1
+  trapped: 1
