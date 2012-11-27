@@ -1,3 +1,0 @@
-module RulesHelper
-  
-end
