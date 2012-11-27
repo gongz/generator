@@ -1,0 +1,93 @@
+<%= form_for(@rule) do |f| %>
+  <% if @rule.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@rule.errors.count, "error") %> prohibited this rule from being saved:</h2>
+
+      <ul>
+      <% @rule.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :name %><br />
+    <%= f.text_field :name %>
+  </div>
+  <div class="field">
+    <%= f.label :roomNo %><br />
+    <%= f.text_field :roomNo %>
+  </div>
+  <div class="field">
+    <%= f.label :when %><br />
+    <%= f.text_field :when %>
+  </div>
+  <div class="field">
+    <%= f.label :nMediaType %><br />
+    <%= f.text_field :nMediaType %>
+  </div>
+  <div class="field">
+    <%= f.label :nFeedback %><br />
+    <%= f.text_field :nFeedback %>
+  </div>
+  <div class="field">
+    <%= f.label :pMediaType %><br />
+    <%= f.text_field :pMediaType %>
+  </div>
+  <div class="field">
+    <%= f.label :pFeedback %><br />
+    <%= f.text_field :pFeedback %>
+  </div>
+  <div class="field">
+    <%= f.label :buildingDamage %><br />
+    <%= f.number_field :buildingDamage %>
+  </div>
+  <div class="field">
+    <%= f.label :road %><br />
+    <%= f.number_field :road %>
+  </div>
+  <div class="field">
+    <%= f.label :fire %><br />
+    <%= f.number_field :fire %>
+  </div>
+  <div class="field">
+    <%= f.label :water %><br />
+    <%= f.check_box :water %>
+  </div>
+  <div class="field">
+    <%= f.label :chem %><br />
+    <%= f.check_box :chem %>
+  </div>
+  <div class="field">
+    <%= f.label :elec %><br />
+    <%= f.check_box :elec %>
+  </div>
+  <div class="field">
+    <%= f.label :gas %><br />
+    <%= f.check_box :gas %>
+  </div>
+  <div class="field">
+    <%= f.label :immediate %><br />
+    <%= f.number_field :immediate %>
+  </div>
+  <div class="field">
+    <%= f.label :dead %><br />
+    <%= f.number_field :dead %>
+  </div>
+  <div class="field">
+    <%= f.label :minor %><br />
+    <%= f.number_field :minor %>
+  </div>
+  <div class="field">
+    <%= f.label :dalayed %><br />
+    <%= f.number_field :dalayed %>
+  </div>
+  <div class="field">
+    <%= f.label :trapped %><br />
+    <%= f.number_field :trapped %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>
